@@ -45,18 +45,18 @@ header {
   display: flex;
   justify-content: space-around;
   padding: 1rem;
-  border: 2rem lightgreen solid;
+  border: calc(10px + 1vw) lightgreen solid;
 }
 
-.home,
-.menu,
-.contact {
+.Home,
+.Menu,
+.Contact {
   color: white;
   border: none;
   background-color: transparent;
-  padding: 1rem;
+  padding: 0.5rem;
   font-weight: bold;
-  font-size: calc(1rem + 2vw);
+  font-size: calc(1rem + 1vw);
   cursor: pointer;
 }
 
@@ -80,6 +80,15 @@ header {
   padding: 1rem;
 }
 
-.chosen {
-  border-bottom: 1rem lightgreen solid;
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: calc(1rem + 1vw);
+  ;
 }

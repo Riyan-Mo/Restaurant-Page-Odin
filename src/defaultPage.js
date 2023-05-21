@@ -9,6 +9,13 @@ export function defaultPage(){
   nav();
   main();
   home();
+  footer();
+}
+
+function footer(){
+  const footer = document.createElement("footer");
+  footer.innerHTML = `<a href="https://github.com/Riyan911" target="_blank">Github: Riyan911</a>`
+  document.getElementById("root").appendChild(footer);
 }
 
 function header(){
@@ -31,9 +38,9 @@ function nav(){
   const [header] = document.getElementsByTagName("header");
   makeElement("div", header, "navigation", "navigation");
   const navigation = document.getElementById("navigation");
-  makeElement("button", navigation, "Home", "home", home);
-  makeElement("button", navigation, "Menu", "menu", menu );
-  makeElement("button", navigation, "Contact", "contact", contact);
+  makeElement("button", navigation, "Home", "Home", home);
+  makeElement("button", navigation, "Menu", "Menu", menu );
+  makeElement("button", navigation, "Contact", "Contact", contact);
 }
 
 export function makeElement(element, parentElement="", eId="", eClass="", Event=""){

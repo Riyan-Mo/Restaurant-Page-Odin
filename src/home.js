@@ -5,7 +5,9 @@ export default function home(){
   const [main] = document.getElementsByTagName("main");
   main.textContent = "";
   const [home, menu, contact] = document.getElementsByTagName('button');
-  home.classList.add("chosen");
+  home.style.borderBottom = "1rem lightgreen solid"
+  menu.style.borderBottom = "";
+  contact.style.borderBottom = "";
   const heading = document.createElement("h2");
   heading.textContent = "About Us";
   const para1 = document.createElement("p");
