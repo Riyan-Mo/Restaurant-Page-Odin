@@ -3,6 +3,6 @@ export default function Menu(){
   main.innerHTML = "";
   const [home, menu, contact] = document.getElementsByTagName('button');
   home.style.borderBottom = ""
-  menu.style.borderBottom = "1rem lightgreen solid";
+  menu.style.borderBottom = "0.5rem lightgreen solid";
   contact.style.borderBottom = ""; 
 }

@@ -5,7 +5,7 @@ export default function home(){
   const [main] = document.getElementsByTagName("main");
   main.innerHTML = "";
   const [home, menu, contact] = document.getElementsByTagName('button');
-  home.style.borderBottom = "1rem lightgreen solid"
+  home.style.borderBottom = "0.5rem lightgreen solid"
   menu.style.borderBottom = "";
   contact.style.borderBottom = "";
   const heading = document.createElement("h2");
