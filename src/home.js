@@ -3,7 +3,7 @@ import { makeElement } from "./defaultPage";
 
 export default function home(){
   const [main] = document.getElementsByTagName("main");
-  main.textContent = "";
+  main.innerHTML = "";
   const [home, menu, contact] = document.getElementsByTagName('button');
   home.style.borderBottom = "1rem lightgreen solid"
   menu.style.borderBottom = "";

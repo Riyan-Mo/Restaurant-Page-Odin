@@ -1,8 +1,8 @@
 import { head } from "lodash";
 import Icon from "./images/tomato.png"; 
 import home from "./home.js";
-import contact from "./contact.js";
-import menu from "./menu.js";
+import Menu from "./menu";
+import Contact from "./contact";
 
 export function defaultPage(){
   header();
@@ -39,8 +39,8 @@ function nav(){
   makeElement("div", header, "navigation", "navigation");
   const navigation = document.getElementById("navigation");
   makeElement("button", navigation, "Home", "Home", home);
-  makeElement("button", navigation, "Menu", "Menu", menu );
-  makeElement("button", navigation, "Contact", "Contact", contact);
+  makeElement("button", navigation, "Menu", "Menu", Menu );
+  makeElement("button", navigation, "Contact", "Contact", Contact);
 }
 
 export function makeElement(element, parentElement="", eId="", eClass="", Event=""){
