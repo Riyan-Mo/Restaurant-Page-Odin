@@ -63,6 +63,7 @@ header {
 section {
   background-color: lightseagreen;
   display: flex;
+  gap: 2rem;
   flex-direction: column;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -73,11 +74,58 @@ section {
 section p {
   font-size: x-large;
   padding: 1rem;
+  font-style: italic;
 }
 
 section h2 {
   font-size: calc(2rem + 1vw);
   padding: 1rem;
+}
+
+section h3 {
+  font-size: calc(1rem + 1vw);
+  padding: 1rem;
+}
+
+.dishContainer {
+  padding: 1rem;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto auto;
+  border-top: 3px white solid;
+}
+
+.dishContainer:last-child {
+  border-bottom: 3px white solid;
+}
+
+.dishName {
+  grid-column: 1/2;
+  font-size: calc(1.5rem + 1vw);
+  font-weight: bolder;
+}
+
+section h3 {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.dishImg {
+  grid-column: 2/3;
+  grid-row: -1/1;
+  border: 5px white solid;
+}
+
+.dishDescription {
+  font-style: italic;
+  font-family: cursive;
+  font-size: calc(14px + 1vw);
+}
+
+.dishPrice {
+  font-size: normal;
 }
 
 footer {

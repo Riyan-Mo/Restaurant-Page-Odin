@@ -1,4 +1,3 @@
-import { head } from "lodash";
 import Icon from "./images/tomato.png"; 
 import home from "./home.js";
 import Menu from "./menu";

@@ -1,5 +1,3 @@
-import { head } from "lodash";
-
 export default function Contact(){
   const [main] = document.getElementsByTagName("main");
   main.innerHTML = "";
